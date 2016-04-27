@@ -1,0 +1,21 @@
+{
+  "name": "Tabwiz",
+  "description": "Tab wizard for quick actions on browser tabs",
+  "version": "1.0",
+  "manifest_version": 2,
+  "permissions": [
+    "tabs",
+    "http://*/*",
+    "https://*/*"
+  ],
+  "browser_action": {
+    "default_title": "TabWiz",
+    "default_icon": "res/icon.png",
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "scripts": [
+      "src/js/background.js"
+    ]
+  }
+}
